@@ -1,0 +1,22 @@
+package com.bridge;
+
+import java.util.Scanner;
+
+public class RepalceString {
+	public static void main(String[] args) {
+		
+		String str="hello username how are you";
+		System.out.println("the original string is");
+		System.out.println(str);
+		RepalceString(str);
+	}
+
+	private static void RepalceString(String str) {
+		Scanner sc=new Scanner(System.in);
+	    	str=sc.nextLine();
+	    	System.out.println("hello "+str+" how are you");
+		// TODO Auto-generated method stub
+		
+	}
+
+}

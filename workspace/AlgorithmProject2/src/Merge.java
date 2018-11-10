@@ -1,0 +1,46 @@
+/**
+ * 
+ * logic for merge sort
+ * 
+ */
+public class Merge {
+
+	
+	static void merge(String arr[], int l, int m, int h) 
+    { 
+        
+        int n1 = m - l + 1; 
+        int n2 = h - m; 
+  
+        String L[] = new String[n1]; 
+        String R[] = new String[n2]; 
+  
+     
+        for (int i=0; i<n1; ++i) 
+            L[i] = arr[l + i]; 
+        for (int j=0; j<n2; ++j) 
+            R[j] = arr[m + 1+ j]; 
+  
+  
+        int i = 0, j = 0; 
+  
+       
+        int k = l; 
+        while (i < n1 && j < n2) 
+        { 
+            if (L[i].compareTo(R[j])<=0) 
+            { 
+                arr[k] = L[i]; 
+                i++; 
+            } 
+            else
+            { 
+                arr[k] = R[j]; 
+                j++; 
+            } 
+            k++; 
+        } 
+  
+    
+    }
+}

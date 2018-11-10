@@ -1,0 +1,4 @@
+INDEX VERSION 1.130+/home/bridgelabz/bridge/workspace/.metadata/.plugins/org.eclipse.jdt.core
+3362404101.index
+2826835681.index
+220624489.index

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;AlgorithmPrograms/src/com/bridge/Gambler.java&apos;" deleteContents="false" description="Delete resource &apos;AlgorithmPrograms/src/com/bridge/Gambler.java&apos;" element1="/AlgorithmPrograms/src/com/bridge/Gambler.java" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1540975792562"/>
+</session>

@@ -1,0 +1,28 @@
+package com.bridge;
+
+import java.io.FileNotFoundException;
+
+import org.json.simple.parser.JSONParser;
+
+public class ReadFile {
+	public static void main(String[] args) {
+		JSONParser parser=new JSONParser();
+		
+		try{
+			
+			
+			
+			
+			
+			
+			
+		}
+catch(FileNotFoundException e) {e.printStackTrace();}
+catch(IOException e) {e.printStackTrace();}
+catch(ParseException e) {e.printStackTrace();}
+		
+		
+		
+	}
+
+}

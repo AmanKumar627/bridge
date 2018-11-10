@@ -1,0 +1,54 @@
+package com.bridge;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+
+public class Utility2 {
+	//Read the file  and take stock details as input and return array-list of stock details
+	public Utility2	public ArrayList<Stock> getStockDetails(String fileName){
+		ArrayList<Stock> stockList=new ArrayList<Stock>();
+		try{
+			br=new BufferedReader(new FileReader(fileName));
+			StringBuilder sb=new StringBuilder();
+			String line=br.readLine();
+			SortingFunction sortingFunction=new SortingFunction();
+			while(line!=null){
+				String words[]=sortingFunction.wordsArrayFromStatement(line);
+				try{
+					stockList.add(new Stock(words[0],Integer.parseInt(words[1]),Integer.parseInt(words[2])));
+				}
+				catch(NumberFormatException nfe){
+				}
+				catch(ArrayIndexOutOfBoundsException ae){
+				}
+				line=br.readLine();
+			}
+			return stockList;
+		 }
+		catch(Exception e){
+			return null;
+		}
+		finally{
+			try{
+				br.close();
+			}
+			catch(IOException ioe){
+			}	
+		}
+	}
+(){
+		br = new BufferedReader(new InputStreamReader(System.in));
+	}
+	
+	
+	
+
+}
+
+		
+	
+
+
+

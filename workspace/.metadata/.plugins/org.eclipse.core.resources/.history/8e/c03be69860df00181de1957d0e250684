@@ -1,0 +1,11 @@
+package com.bridge;
+
+import java.util.Scanner;
+
+public class ReplaceString {
+Scanner sc=new Scanner(System.in);
+
+	// TODO Auto-generated method stub
+
+}
+

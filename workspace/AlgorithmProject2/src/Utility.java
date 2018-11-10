@@ -1,0 +1,64 @@
+import java.util.Scanner;
+
+public class Utility {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("eneter the amount");
+		int amount=sc.nextInt();
+		System.out.println("eneter length of array");
+		int length = sc.nextInt();
+		System.out.println("enter " + length + " elements");
+
+		int onerupee[] = new int[length];
+		for (int i = 0; i < onerupee.length; i++) {
+			onerupee[i] = sc.nextInt();
+		}
+
+		int tworupee[] = new int[length];
+		for (int i = 0; i < tworupee.length; i++) {
+			tworupee[i] = sc.nextInt();
+		}
+
+		int fiverupee[] = new int[length];
+		for (int i = 0; i < fiverupee.length; i++) {
+
+		}
+		int tenrupee[] = new int[length];
+		for (int i = 0; i < tenrupee.length; i++) {
+			tenrupee[i] = sc.nextInt();
+		}
+
+		int fiftyrupee[] = new int[length];
+		for (int i = 0; i < fiftyrupee.length; i++) {
+			fiftyrupee[i] = sc.nextInt();
+		}
+
+		int hundredrupee[] = new int[length];
+		for (int i = 0; i < hundredrupee.length; i++) {
+			hundredrupee[i] = sc.nextInt();
+
+		}
+
+		int thousandrupee[] = new int[length];
+		for (int i = 0; i < thousandrupee.length; i++) {
+			thousandrupee[i] = sc.nextInt();
+		}
+
+		int fivehundredrupee[] = new int[length];
+		for (int i = 0; i < fivehundredrupee.length; i++) {
+			fivehundredrupee[i] = sc.nextInt();
+		}
+		
+		findChange(amount);
+		
+	}
+
+	private static void findChange(int amount) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+
+}

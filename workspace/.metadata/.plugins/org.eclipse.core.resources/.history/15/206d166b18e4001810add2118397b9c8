@@ -1,0 +1,22 @@
+package com.bridge;
+
+import java.util.Scanner;
+
+public class StockMain {
+
+
+	public static void main(String args[])
+	
+	{
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("enter the name of stock");
+		String name=scanner.next();
+		System.out.println("enter the ");
+		//get stock details read stock details from fie.txt and display reports.s
+		System.out.println(new Utility().getStockDetails());
+	}
+}
+	
+	
+
+

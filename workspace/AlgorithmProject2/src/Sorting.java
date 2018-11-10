@@ -1,0 +1,29 @@
+
+public class Sorting {
+
+	public static void Sort(String st) {
+		char[] ch = st.toCharArray();
+		int n = ch.length;
+		for (int i = 1; i < n; ++i) {
+			int key = ch[i];
+			int j = i - 1;
+
+			while (j >= 0 && ch[j] > key) {
+				ch[j + 1] = ch[j];
+				j = j - 1;
+			}
+			ch[j + 1] = (char) key;
+		}
+	}
+
+	static void printCharacater(char[] ch) {
+		int n = ch.length;
+		for (int i = 0; i < n; ++i) {
+			System.out.println(ch[i] + " ");
+		}
+
+		String nstr = new String(ch);
+		System.out.println(nstr);
+
+	}
+}

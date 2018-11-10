@@ -1,0 +1,23 @@
+package com.bridge;
+
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.util.Collections;
+import java.util.List;
+
+public class OrderedList {
+	public static void main(String[] args) throws Exception {
+		BufferedReader b = new BufferedReader(new FileReader("/home/bridgeit/Desktop/2d/OrderedList.txt"));
+		MainForOrderedList ow = new MainForOrderedList();
+		String st1;
+		while ((st1 = b.readLine()) != null) {
+			String w1[] = st1.split(",");
+			for (int i = 0; i < w1.length; i++) {
+				ow.add(w1[i]);
+			}
+		}
+		System.out.println(ow);
+
+	}
+}

@@ -1,0 +1,12 @@
+
+public class Main1{
+		// TODO Auto-generated method stub
+
+	
+
+	public static void findChange(int amount) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,69 @@
+package com.bridge;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Deque {
+
+	private List<Integer> deque = new ArrayList<Integer>();
+
+	public void insertFront(int item) {
+		// adding element in front of the deque
+		System.out.println("adding at front " + item);
+		deque.add(0, item);
+		System.out.println(deque);
+
+	}
+
+	public void insertRear(int item) {
+		// adding element in last position of the deque
+		System.out.println("adding at rear " + item);
+		deque.add(item);
+		System.out.println(deque);
+	}
+
+	public void removeAtFront(int item) {
+		// remove element from front of the dequeue
+		if (deque.isEmpty()) {
+			System.out.println("we cant remove the element");
+			return;
+		} else {
+			int rem = deque.remove(0);
+			System.out.println("remove the element " + rem);
+			System.out.println(deque);
+		}
+	}
+
+	public void removeAtRear() {
+		if (deque.isEmpty()) {
+
+			System.out.println("we cant remove the element");
+			return;
+
+		} else {
+			int rev = deque.remove(deque.size() - 1);
+			System.out.println("remove the element " + rev);
+			System.out.println(deque);
+		}
+	}
+
+	public int peekFront() {
+		int item = deque.get(0);
+		System.out.println("peeked data is " + item);
+		return item;
+	}
+
+	public int peekRear() {
+		int item = deque.get(deque.size() - 1);
+		System.out.println("peeked data is" + item);
+		return item;
+	}
+
+	public static void main(String[] args) {
+		Deque de = new Deque();
+		de.insertRear(40);
+		de.insertRear(35);
+		de.insertFront(90);
+	}
+
+}

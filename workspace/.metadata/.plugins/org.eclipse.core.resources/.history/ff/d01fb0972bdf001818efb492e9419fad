@@ -1,0 +1,20 @@
+package com.bridge;
+
+public class CashCounter {
+
+	public void depositMoney(long depositmoney, long deposit) {
+		depositmoney = depositmoney + deposit;
+		System.out.println("the deposited money is "+depositmoney);
+	}
+
+	public void withdrawMoney(long withdrawMoney, long withdraw, long depositmoney) {
+		withdrawMoney = depositmoney - withdraw;
+		System.out.println("the withdrawal money is "+withdrawMoney);
+	}
+
+	public void totalMoney(long totalMoney, long withdrawMoney, long depositMoney) {
+		totalMoney = depositMoney - withdrawMoney;
+		System.out.println("the total money is "+totalMoney);
+	}
+
+}

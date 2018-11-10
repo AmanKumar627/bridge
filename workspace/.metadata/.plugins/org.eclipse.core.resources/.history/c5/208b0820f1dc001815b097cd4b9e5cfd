@@ -1,0 +1,29 @@
+/*
+ * 
+ * 
+ */
+ 
+  package com.bridge;
+ 
+
+public class StopWatch {
+	double startTime = 0;
+	double stopTime = 0;
+	double eclipsedTime;
+
+	public void start() {
+		startTime = System.currentTimeMillis();
+
+	}
+
+	public void stop() {
+		stopTime = System.currentTimeMillis();
+	}
+
+	public double eclipsed() {
+		eclipsedTime = stopTime - startTime;
+		return eclipsedTime;
+	}
+
+	// TODO Auto-generated method stu
+}
