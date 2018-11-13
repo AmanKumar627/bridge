@@ -1,0 +1,32 @@
+package com.bridge;
+
+import java.util.Scanner;
+
+import org.json.simple.parser.JSONParser;
+
+public class ReportMain {
+	public static void main(String[] args) {
+		
+	
+	Scanner sc=new Scanner(System.in);
+	System.out.println("enter the number of stock");
+	int stock=sc.nextInt();
+    System.out.println("enter the name of stock");
+    String name=sc.next();
+    System.out.println("enter the no of share");
+    int share=sc.nextInt();
+     
+    
+    JSONParser parser=new JSONParser ();
+    		try (FileReader reader = new FileReader("/home/bridgelabz/aman.json")){
+    			
+    			Object obj=jsonParser.parse(reader);
+
+    
+    	
+    }
+		// TODO Auto-generated method stub
+
+	}
+
+}

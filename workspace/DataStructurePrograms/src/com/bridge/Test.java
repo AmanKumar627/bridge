@@ -5,7 +5,7 @@ import java.io.FileReader;
 
 public class Test {
 	public static void main(String[] args) throws Exception {
-		BufferedReader b = new BufferedReader(new FileReader("/home/bridgeit/Desktop/2d/o.txt"));
+		BufferedReader b = new BufferedReader(new FileReader(""));
 		Test1 ow = new Test1();
 		String st1;
 		int ar[];

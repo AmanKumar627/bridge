@@ -12,9 +12,9 @@ package com.bridge;
 		   
 		
 	   public static void main(String[] args) throws Exception {
-	   BufferedReader br=new BufferedReader(new FileReader("/home/bridgeit/Desktop/2d/unordered.txt"));
+	   BufferedReader br=new BufferedReader(new FileReader(""));
 	   String st="";
-	   UnOrderedList own=new UnOrderedList();
+	  MainForUnOrderedList own=new MainForUnOrderedList();
 	   Scanner s=new Scanner(System.in);
 	   String str;
 	   while((st=br.readLine())!=null) {

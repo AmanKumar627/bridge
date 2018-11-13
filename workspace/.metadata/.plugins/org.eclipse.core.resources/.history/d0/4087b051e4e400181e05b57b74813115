@@ -1,0 +1,50 @@
+package com.bridge;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+
+public class Report {
+	public static void main(String[] args) {
+
+		JSONObject obj = new JSONObject();
+		obj.put("stockname", "pepsi");
+		obj.put("NoOfShare", new Integer(200));
+		obj.put("PriceOfEachShare", new Integer(20));
+
+		JSONObject obj2 = new JSONObject();
+		obj2.put("firstStock", obj);
+
+		JSONObject obj3 = new JSONObject();
+		obj.put("stockname", "Coc");
+		obj.put("NoOfShare", new Integer(200));
+		obj.put("PriceOfEachShare", new Integer(20));
+
+		JSONObject obj4 = new JSONObject();
+		obj2.put("firstStock", obj3);
+
+		JSONObject obj5 = new JSONObject();
+		obj.put("stockname", "sprite");
+		obj.put("NoOfShare", new Integer(200));
+		obj.put("PriceOfEachShare", new Integer(20));
+
+		JSONObject obj6 = new JSONObject();
+		obj2.put("firstStock", obj5);
+
+		JSONArray stocklist = new JSONArray();
+		stocklist.add(obj2);
+		stocklist.add(obj4);
+		stocklist.add(obj6);
+
+		try (FileWriter file = new FileWriter("/home/bridgelabz/aman.json")) {
+			file.write(stocklist.toJSONString());
+			file.flush();
+		}
+
+		catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+}

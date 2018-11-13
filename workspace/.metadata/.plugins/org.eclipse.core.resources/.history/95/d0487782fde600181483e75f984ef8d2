@@ -1,0 +1,128 @@
+package com.bridge;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.text.ParseException;
+import java.util.Scanner;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+
+public class ReportMain {
+	public static void main(String[] args) throws org.json.simple.parser.ParseException {
+       JSONObject stock;
+		Scanner sc = new Scanner(System.in);
+		/*System.out.println("enter the number of stock");
+		int stock = sc.nextInt();
+		System.out.println("enter the name of stock");
+		String name = sc.next();
+		System.out.println("enter the no of share");
+		int share = sc.nextInt();
+*/
+		JSONParser parser = new JSONParser();
+		try {
+			FileReader reader = new FileReader("/home/bridgelabz/aman.json");
+
+			Object obj = parser.parse(reader);
+			JSONArray list = (JSONArray) obj;
+
+			System.out.println(list);
+			for (int i = 0; i < list.size(); i++) {
+	             JSONObject obj1=(JSONObject)list.get(i);
+	             System.out.println("stockname" +obj1.get("stockname")+"\n no of Share "+obj1.get("NoOfShare")+"\n priceOFShare"+obj1.get("PriceOfEachShare")+"\ntotalPric"+obj1.get("total")            );
+				
+			
+			}
+		}
+
+		catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	
+
+	/*private static void parsestockObject(JSONObject stock, JSONObject stock1, JSONObject stock2) {
+		JSONObject stockObject = (JSONObject) stock.get("firstStock");
+		String stockname = (String) stockObject.get("stockname");
+		int noOfShares = (int) stockObject.get("NoOfShare");
+		int PriceOfEachShare = (int) stockObject.get("PriceOfEachShare");
+
+		JSONObject stockObject1 = (JSONObject) stock1.get("secondStock");
+		String stockname1 = (String) stockObject1.get("stockname");
+		int noOfShares1 = (int) stockObject.get("NoOfShare");
+		int PriceOfEachShare1 = (int) stockObject.get("PriceOfEachShare");
+
+		JSONObject stockObject2 = (JSONObject) stock2.get("thirdStock");
+		String stockname2 = (String) stockObject2.get("stockname");
+		int noOfShares2 = (int) stockObject2.get("NoOfShare");
+		int PriceOfEachShare2 = (int) stockObject2.get("PriceOfEachShare");*/
+		
+		
+		/*System.out.println("which stock you wnt buy");
+		String stockname=sc.next();
+		if(stockname.equals("pepsi"))
+			
+		{
+			System.out.println("how amny share you want to buy");
+			int share=sc.nextInt();
+			if(share<200)
+			{
+				System.out.println("your share is ready");
+				System.out.println("remaing share" +(200-share));
+				System.out.println("remaing share share amount" +(2000-(share*20)));
+				
+			}
+		}
+		if(stockname.equals("sprite"))
+		{
+			System.out.println("how amny share you want to buy");
+			int share=sc.nextInt();
+			if(share<200)
+			{
+				System.out.println("your share is ready");
+				System.out.println("remaing share" +(200-share));
+				System.out.println("remaing share share amount" +(2000-(share*20)));
+				
+		}
+		
+		
+	}*/
+		//for (int j = 0; j < list.size(); j++) {
+          //  JSONObject obj1=(JSONObject)list.get(i);
+            //System.out.println("stockname" +obj1.get("stockname")+"\n no of Share "+obj1.get("NoOfShare")+"\n priceOFShare"+obj1.get("PriceOfEachShare"));
+			System.out.println("whic stock you wnat to buy");
+			System.out.println("1.pepsi\n2.coc\n3.sprite");
+			int number;
+			String st="true";
+			boolean bn=false;
+			while(bn==false)
+			{
+				System.out.println("enter the name of stock you wnat to  buy");
+				number=sc.nextInt();
+				switch(number){
+				
+				case 1:
+				
+					long stockname=0;
+					long noOfShare=0;
+					long shareOfPrice=0;
+					long totalStackamount=0;
+					
+				
+							
+						
+							
+					
+				}
+				}
+			}
+		
+           
+	}
+
+
+	// TODO Auto-generated method stub
+
